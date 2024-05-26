@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Clients from "@/components/ui/Clients";
+import Experience from "@/components/ui/Experience";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import Grid from "@/components/ui/Grid";
 import RecentProjects from "@/components/ui/RecentProjects";
@@ -18,6 +19,7 @@ export default function Home() {
         <Grid />
         <RecentProjects />
         <Clients />
+        <Experience />
       </div>
     </main>
   );
