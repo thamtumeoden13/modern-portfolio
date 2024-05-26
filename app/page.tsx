@@ -1,17 +1,16 @@
 import Hero from "@/components/Hero";
-import Approach from "@/components/ui/Approach";
-import Clients from "@/components/ui/Clients";
-import Experience from "@/components/ui/Experience";
+import Approach from "@/components/Approach";
+import Clients from "@/components/Clients";
+import Experience from "@/components/Experience";
 import { FloatingNav } from "@/components/ui/FloatingNav";
-import Grid from "@/components/ui/Grid";
-import RecentProjects from "@/components/ui/RecentProjects";
+import Grid from "@/components/Grid";
+import RecentProjects from "@/components/RecentProjects";
 import { navItems } from "@/data";
-import Image from "next/image";
-import { FaHome } from "react-icons/fa";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-5">
+    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
         <FloatingNav
           navItems={navItems}
@@ -22,6 +21,7 @@ export default function Home() {
         <Clients />
         <Experience />
         <Approach />
+        <Footer />
       </div>
     </main>
   );
